@@ -1,0 +1,1 @@
+128*128 each character (knight, yokai, wizard, skeleton)
