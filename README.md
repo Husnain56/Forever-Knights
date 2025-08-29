@@ -11,9 +11,11 @@ Built with **CMake** and works on **Linux, macOS, and Windows**.
 Forever-Knights/
 │── CMakeLists.txt       # Build configuration
 │── src/                 # Game source code (.cpp, .hpp)
-│── assets/              # Game assets (images, audio, etc.)
+│── resources/           # Game resources (images, audio, fonts etc.)
+│── include/             # header files
 │── external/            # Dependencies
 │    └── raylib/         # raylib submodule
+
 ```
 
 ---
