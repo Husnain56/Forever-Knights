@@ -22,19 +22,11 @@ Forever-Knights/
 
 ## Getting Started
 
-### 1. Clone the repo (with submodules!)
-
-Make sure you clone with `--recursive` so raylib is included:
+### 1. Clone the repo
 
 ```sh
-git clone --recursive https://github.com/YourUser/Forever-Knights.git
+git clone https://github.com/YourUser/Forever-Knights.git
 cd Forever-Knights
-```
-
-If you forgot `--recursive`, run:
-
-```sh
-git submodule update --init --recursive
 ```
 
 ---
