@@ -1,0 +1,32 @@
+# Compiled object files, static and dynamic libs
+*.o
+*.so
+*.so.*
+*.a
+*.dll
+*.dylib
+
+# Build directories
+/build/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Raylib generated stuff (if any intermediate assets)
+*.tmp
+*.bak
+
+# OS specific
+.DS_Store
+Thumbs.db
