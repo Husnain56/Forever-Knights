@@ -78,12 +78,12 @@ cmake --build build
 
 ### 3. Notes
 
-* Always run the game from the project root (`./build/Forever-Knights`) so it can find the `assets/` folder.
+* Always run the game from the project root (`./build/Forever-Knights`) so it can find the `resources/` folder.
 * If you add new source files in `src/`, CMake will automatically pick them up.
-* If you add new assets, put them in the `assets/` folder and load them in code like:
+* If you add new assets, put them in the `resources/` folder and load them in code like:
 
   ```cpp
-  Texture2D knight = LoadTexture("assets/knight.png");
+  Texture2D knight = LoadTexture("resources/knight.png");
   ```
 
 ---
