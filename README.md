@@ -13,8 +13,6 @@ Forever-Knights/
 │── src/                 # Game source code (.cpp, .hpp)
 │── resources/           # Game resources (images, audio, fonts etc.)
 │── include/             # header files
-│── external/            # Dependencies
-│    └── raylib/         # raylib submodule
 
 ```
 
@@ -92,8 +90,4 @@ cmake --build build
 
 * Clone → Create a branch → Code → Commit → Push → Open PR.
 * Don’t commit anything in `build/` (already ignored).
-* Make sure to pull submodule updates if raylib is updated:
 
-  ```sh
-  git submodule update --init --recursive
-  ```
