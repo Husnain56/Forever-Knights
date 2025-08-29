@@ -4,18 +4,26 @@ project(ForeverKnights LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add raylib from submodule
-add_subdirectory(external/raylib)
+# --- Fetch latest raylib from GitHub ---
+include(FetchContent)
 
-# Add your game sources
+FetchContent_Declare(
+  raylib
+  GIT_REPOSITORY https://github.com/raysan5/raylib.git
+  GIT_TAG master   # pulls the latest commit from raylib/master
+)
+
+FetchContent_MakeAvailable(raylib)
+
+# --- Add your game sources ---
 file(GLOB SRC_FILES src/*.cpp)
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
 
-# Link against raylib
+# --- Link against raylib ---
 target_link_libraries(${PROJECT_NAME} raylib)
 
-# Platform-specific dependencies
+# --- Platform-specific dependencies ---
 if (UNIX AND NOT APPLE)
     target_link_libraries(${PROJECT_NAME} pthread m dl GL)
 elseif(APPLE)
