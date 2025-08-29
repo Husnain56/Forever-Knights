@@ -1,4 +1,4 @@
-# Forever-Knights
+# Penance
 
 A cross-platform C++ game project using [raylib](https://www.raylib.com/).
 Built with **CMake** and works on **Linux, macOS, and Windows**.
@@ -8,7 +8,7 @@ Built with **CMake** and works on **Linux, macOS, and Windows**.
 ## Project Structure
 
 ```
-Forever-Knights/
+Penance/
 │── CMakeLists.txt       # Build configuration
 │── src/                 # Game source code (.cpp, .hpp)
 │── resources/           # Game resources (images, audio, fonts etc.)
@@ -23,8 +23,8 @@ Forever-Knights/
 ### 1. Clone the repo
 
 ```sh
-git clone https://github.com/YourUser/Forever-Knights.git
-cd Forever-Knights
+git clone https://github.com/YourUser/Penance.git
+cd Penance
 ```
 
 ---
@@ -36,7 +36,7 @@ cd Forever-Knights
 ```sh
 cmake -S . -B build
 cmake --build build
-./build/Forever-Knights
+./build/Penance
 ```
 
 #### **Windows (with Visual Studio / MSVC)**
@@ -46,14 +46,14 @@ Open a terminal (x64 Native Tools Command Prompt or PowerShell):
 ```powershell
 cmake -S . -B build
 cmake --build build --config Release
-.\build\Release\Forever-Knights.exe
+.\build\Release\Penance.exe
 ```
 
 If you want to debug:
 
 ```powershell
 cmake --build build --config Debug
-.\build\Debug\Forever-Knights.exe
+.\build\Debug\Penance.exe
 ```
 
 #### **Windows (with MinGW + Make)**
@@ -61,14 +61,14 @@ cmake --build build --config Debug
 ```sh
 cmake -G "MinGW Makefiles" -S . -B build
 cmake --build build
-.\build\Forever-Knights.exe
+.\build\Penance.exe
 ```
 
 ---
 
 ### 3. Notes
 
-* Always run the game from the project root (`./build/Forever-Knights`) so it can find the `resources/` folder.
+* Always run the game from the project root (`./build/Penance`) so it can find the `resources/` folder.
 * If you add new source files in `src/`, CMake will automatically pick them up.
 * If you add new assets, put them in the `resources/` folder and load them in code like:
 
