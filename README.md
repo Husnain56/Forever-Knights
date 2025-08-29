@@ -1,4 +1,4 @@
-# Forever-Knights 🏰⚔️
+# Forever-Knights
 
 A cross-platform C++ game project using [raylib](https://www.raylib.com/).
 Built with **CMake** and works on **Linux, macOS, and Windows**.
@@ -88,7 +88,7 @@ cmake --build build
 
 ---
 
-### 🛡️ Tech Stack
+### Tech Stack
 
 * **Language:** C++17
 * **Graphics/Audio:** raylib
@@ -96,7 +96,7 @@ cmake --build build
 
 ---
 
-### 👥 Team Workflow
+### Team Workflow
 
 * Clone → Create a branch → Code → Commit → Push → Open PR.
 * Don’t commit anything in `build/` (already ignored).
