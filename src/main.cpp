@@ -3,8 +3,8 @@
 int main()
 {
     // Initialization
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int screenWidth = GetMonitorWidth(0);
+    const int screenHeight = GetMonitorHeight(0);
 
     InitWindow(screenWidth, screenHeight, "My First Raylib Game");
     SetTargetFPS(60);
