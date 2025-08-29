@@ -1,15 +1,15 @@
-# Makefile for Forever-Knights game build process
+# Makefile for Penance build process
 
 .PHONY: all game clean rebuild help
 
 # Detect operating system and set build parameters
 ifeq ($(OS),Windows_NT)
     DETECTED_OS := Windows
-    EXECUTABLE := ./build/Debug/Forever-Knights.exe
+    EXECUTABLE := ./build/Debug/Penance.exe
     BUILD_TYPE := Debug
 else
     DETECTED_OS := $(shell uname -s)
-    EXECUTABLE := ./build/Forever-Knights
+    EXECUTABLE := ./build/Penance
     BUILD_TYPE := Release
 endif
 
